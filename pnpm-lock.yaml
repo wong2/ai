@@ -1058,8 +1058,8 @@ importers:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
       react-server-dom-webpack:
-        specifier: 18.3.0-canary-eb33bd747-20240312
-        version: 18.3.0-canary-eb33bd747-20240312(react-dom@18.2.0)(react@18.2.0)(webpack@5.89.0)
+        specifier: 18.3.0-next-819687279-20221208
+        version: 18.3.0-next-819687279-20221208(react-dom@18.2.0)(react@18.2.0)(webpack@5.89.0)
       tsup:
         specifier: ^7.2.0
         version: 7.2.0(typescript@5.1.3)
@@ -8060,16 +8060,15 @@ packages:
       acorn: 8.11.2
     dev: true
 
-  /acorn-loose@8.4.0:
-    resolution: {integrity: sha512-M0EUka6rb+QC4l9Z3T0nJEzNOO7JcoJlYMrBlyBCiFSXRyxjLKayd4TbQs2FDRWQU1h9FR7QVNHt+PEaoNL5rQ==}
-    engines: {node: '>=0.4.0'}
-    dependencies:
-      acorn: 8.11.2
-    dev: true
-
   /acorn-walk@8.3.2:
     resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
     engines: {node: '>=0.4.0'}
+    dev: true
+
+  /acorn@6.4.2:
+    resolution: {integrity: sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
     dev: true
 
   /acorn@7.4.1:
@@ -16086,15 +16085,16 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-server-dom-webpack@18.3.0-canary-eb33bd747-20240312(react-dom@18.2.0)(react@18.2.0)(webpack@5.89.0):
-    resolution: {integrity: sha512-0Gxe+B42OxoOtmBaUoyWYCOEK5TV8qojK1VT9R+nj6ac9uL99lEg91awPo7Xm8EnLOtJSFK1ILfR77SKzTXiPw==}
+  /react-server-dom-webpack@18.3.0-next-819687279-20221208(react-dom@18.2.0)(react@18.2.0)(webpack@5.89.0):
+    resolution: {integrity: sha512-1bc5s74tYSDSoR6BIncrNNXpdCPifILT0W6I5bpG0wDskyYwVTpc7Plb39sJh/i5QkFb0a4qS57ANIeKKWHh0w==}
     engines: {node: '>=0.10.0'}
     peerDependencies:
-      react: 18.3.0-canary-eb33bd747-20240312
-      react-dom: 18.3.0-canary-eb33bd747-20240312
+      react: 18.3.0-next-819687279-20221208
+      react-dom: 18.3.0-next-819687279-20221208
       webpack: ^5.59.0
     dependencies:
-      acorn-loose: 8.4.0
+      acorn: 6.4.2
+      loose-envify: 1.4.0
       neo-async: 2.6.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
